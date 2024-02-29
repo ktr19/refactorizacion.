@@ -9,15 +9,17 @@ package calculadora;
  * @author usuario
  */
 
-public class Calculadora {
+public class Calculadora implements InterfaceCalculadora {
 
     public int resultado;
     
+    @Override
     public  int sumar(int sumando1, int sumando2) {
         return sumando1 + sumando2;
     }
 
-    public static int restar(int restar1, int restar2) {
+    @Override
+    public int restar(int restar1, int restar2) {
         return restar1 - restar2;
     }
 
