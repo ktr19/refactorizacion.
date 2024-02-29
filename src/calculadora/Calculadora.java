@@ -9,7 +9,7 @@ package calculadora;
  * @author usuario
  */
 
-public class Calculadora implements InterfaceCalculadora {
+public class Calculadora extends SuperClaseModDiv implements InterfaceCalculadora {
 
     public int resultado;
     
@@ -27,19 +27,6 @@ public class Calculadora implements InterfaceCalculadora {
         return multiplicador1 * multiplicador2;
     }
 
-    public static int dividir(int dividendo, int divisor) {
-        if (divisor == 0) {
-            throw new ArithmeticException("División por cero");
-        }
-        return dividendo / divisor;
-    }
-
-    public static int modulo(int operador1, int operador2) {
-        if (operador2 == 0) {
-            throw new ArithmeticException("Módulo por cero");
-        }
-        return operador1 % operador2;
-    }
     
     public  int operacion(int operador1, int operador2, String operacion) {
         if (null != operacion) switch (operacion) {
