@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package com.ud4refactorizar.utilidades;
+package calculadora;
 
 /**
  *
@@ -59,7 +59,4 @@ public class Calculadora {
     }
   
 
-  public static int operacionObsoleta(int a, int b) {
-        return a + b;
-  }
 }
