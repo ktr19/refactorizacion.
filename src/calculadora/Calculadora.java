@@ -13,8 +13,8 @@ public class Calculadora {
 
     public int resultado;
     
-    public  int sumar(int a, int b) {
-        return a + b;
+    public  int sumar(int sumando1, int sumando2) {
+        return sumando1 + sumando2;
     }
 
     public static int restar(int a, int b) {
@@ -57,6 +57,4 @@ public class Calculadora {
         
         throw new IllegalArgumentException("Operación no válida");
     }
-  
-
 }
